@@ -38,8 +38,9 @@ body{
     overflow: hidden;
     align-items: center;
     cursor: pointer;
-    transition: transform .3s ease;
     margin-top: 70px;
+    transition: transform .3s ease;
+
 }
 
 .btn::before{

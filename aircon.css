@@ -1,0 +1,147 @@
+:root{
+
+    --bg-color: #151320;
+    --conic-gradient: conic-gradient(
+        #FF2E2E,
+        #FF831E,
+        #FCFF51,
+        #58FF57,
+        #575FFF,
+        #D257FF,
+        #FF57E5,
+        #FF1556
+    );
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .btn{
+        width: 25em;
+        height: 6em;
+        border-radius: 1em;
+        box-shadow: 0 1em 1em rgba(0,0,0,0.5);
+        position:sticky;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: transform .3s ease;
+    
+    }
+    
+    .btn::before{
+        content:'';
+        position:absolute;
+        width: 120%;
+        height: 420%;
+        background: var(--conic-gradient);
+    }
+    
+    .btn::after{
+        content: 'Aircon Object Detection';
+        position: absolute;
+        background-color: var(--bg-color);
+        width: 96%;
+        height: 86%;
+        border-radius: .4em;
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn:hover{
+        transform: scale(1.1);
+    
+    }
+    
+    .btn:hover::before{
+        animation: spin 1.5s infinite linear;
+    }
+    
+    @keyframes spin{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .btn2{
+        width: 9em;
+        height: 3.5em;
+        border-radius: 0.6em;
+        box-shadow: 0 1em 1em rgba(0,0,0,0.5);
+        position:relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: transform .3s ease;
+    
+    }
+    
+    .btn2::before{
+        content:'';
+        position:absolute;
+        width: 125%;
+        height: 420%;
+        background: var(--conic-gradient);
+    }
+    
+    .btn2::after{
+        content: '<- Back';
+        position: absolute;
+        background-color: var(--bg-color);
+        width: 96%;
+        height: 86%;
+        border-radius: .4em;
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn2:hover{
+        transform: scale(1.1);
+    
+    }
+    
+    .btn2:hover::before{
+        animation: spin2 1.5s infinite linear;
+    }
+    
+    @keyframes spin2{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    #statuses{
+        margin-top: 25px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    canvas{
+        background-color: #fff;
+        border-color: var(--bg-color);
+        border-radius: 20px;
+        box-shadow: 0 1em 1em rgba(0,0,0,0.5);
+        border-style: solid;
+        margin-top: 240px;
+        border-width: 15px;
+    }
