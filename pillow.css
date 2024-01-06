@@ -47,7 +47,7 @@
     }
     
     .btn::after{
-        content: 'Aircon Object Detection';
+        content: 'Pillow Object Detection';
         position: absolute;
         background-color: var(--bg-color);
         width: 96%;

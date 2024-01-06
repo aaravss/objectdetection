@@ -3,7 +3,7 @@ img = "";
 objects = [];
 
 function preload(){
-    img = loadImage("aircon.jpg");
+    img = loadImage("mouse.jpg");
 }
 
 function setup(){
@@ -40,6 +40,6 @@ function gotResults(error,results){
   stroke('#FF0000');
 rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
 document.getElementById("status").innerHTML = "Status: object(s) detected";
-document.getElementById("detected").innerHTML = "There is one object in the image from which CocoSSD has detected 2."
+document.getElementById("detected").innerHTML = "There is one object in the image from which CocoSSD has detected one."
     }
   }}

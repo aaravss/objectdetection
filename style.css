@@ -384,7 +384,7 @@ body{
 }
 
 .btn7::after{
-    content: 'Bottle';
+    content: 'Remote';
     position: absolute;
     background-color: var(--bg-color);
     width: 96%;
